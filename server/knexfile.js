@@ -6,7 +6,7 @@ module.exports = {
       user: "postgres",
       password: "docker",
       port: 5432,
-      database: "PUT DATABASE NAME HERE"
+      database: "whatcanimake"
     }
   },
   staging: {
