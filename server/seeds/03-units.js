@@ -15,5 +15,6 @@ exports.seed = async function(knex) {
     {id: 7, name: 'grams', abbreviation: 'g'},
     {id: 8, name: 'milliliters', abbreviation: 'ml'},
     {id: 9, name: 'liters', abbreviation: 'L'},
+    {id: 10, name: '<', abbreviation: '<'},
   ]);
 };
