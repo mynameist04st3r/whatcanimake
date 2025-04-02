@@ -17,7 +17,7 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  return knex.schema.alterTable('recipe_ingredients', table => {
+  return knex.schema.alterTable('ingredient_dietary_restrictions', table => {
     table.dropForeign('ingredients_id')
     table.dropForeign('dietary_restrictions_id')
   })
