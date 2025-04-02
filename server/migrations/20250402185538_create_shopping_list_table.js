@@ -5,10 +5,10 @@
 exports.up = function(knex) {
   return knex.schema.createTable('shopping_list', table => {
     table.increments('id');
-    table.integer('users_id');
-    table.integer('ingredients_id');
-    table.foreign('users_id').references(`users.id`);
-    table.foreign('ingredients_id').references(`ingredients.id`);
+    table.integer('user_id');
+    table.integer('ingredient_id');
+    table.foreign('user_id').references(`users.id`);
+    table.foreign('ingredient_id').references(`ingredients.id`);
     table.string('quantity');
   });
 };
@@ -19,8 +19,8 @@ exports.up = function(knex) {
  */
 exports.down = function(knex) {
   return knex.schema.alterTable('shopping_list', table => {
-    table.dropForeign('users_id')
-    table.dropForeign('ingredients_id')
+    table.dropForeign('user_id')
+    table.dropForeign('ingredient_id')
   })
   .then(function() {
     return knex.schema.dropTable('shopping_list');
