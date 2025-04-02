@@ -5,6 +5,8 @@
   text-align: center;
 }
 
-body {
-  background-color: #93c560;
+.main-container-app {
+  background-color: #eb8921;
+  border: 1px solid #F2F7EB;
+  border-radius: 15px;
 }
