@@ -5,10 +5,8 @@
 exports.up = function(knex) {
   return knex.schema.createTable('user_dietary_restrictions', table => {
     table.increments('id');
-    table.integer('user_id');
-    table.integer('dietary_restriction_id');
-    table.foreign('user_id').references(`users.id`);
-    table.foreign('dietary_restriction_id').references(`dietary_restrictions.id`);
+    table.integer('user_id').references(`users.id`);
+    table.integer('dietary_restriction_id').references(`dietary_restrictions.id`);
   });
 };
 

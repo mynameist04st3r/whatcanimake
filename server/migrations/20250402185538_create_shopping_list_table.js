@@ -5,10 +5,8 @@
 exports.up = function(knex) {
   return knex.schema.createTable('shopping_list', table => {
     table.increments('id');
-    table.integer('user_id');
-    table.integer('ingredient_id');
-    table.foreign('user_id').references(`users.id`);
-    table.foreign('ingredient_id').references(`ingredients.id`);
+    table.integer('user_id').references(`users.id`);
+    table.integer('ingredient_id').references(`ingredients.id`);
     table.string('quantity');
   });
 };
