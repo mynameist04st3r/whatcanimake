@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const knex = require('knex')(require('./knexfile.js')['development']);
 
-app.use('/images', express.static(path.join(__dirname, 'images')));
+// app.use('./images', express.static(path.join(__dirname, 'images')));
 
 app.get('/', (req, res) => {
   res.send('Server operational.');
