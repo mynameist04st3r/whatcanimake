@@ -9,6 +9,7 @@ exports.up = function(knex) {
     table.integer('ingredient_id').references(`ingredients.id`);
     table.string('quantity').notNullable();
     table.integer('unit_id').references('units.id');
+    table.boolean('is_available').defaultTo(true);
   });
 };
 

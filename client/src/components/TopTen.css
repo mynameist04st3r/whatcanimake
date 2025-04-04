@@ -1,0 +1,9 @@
+.topten-container {
+  background-color: #eb8921;
+  padding: 20px;
+  border: 2px solid yellowgreen;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  height: 400px;
+}

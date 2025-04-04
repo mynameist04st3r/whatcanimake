@@ -20,6 +20,6 @@ exports.down = function(knex) {
     table.dropForeign('dietary_restriction_id')
   })
   .then(function() {
-    return knex.schema.dropTable('user_dietary_restrictions');
+    return knex.schema.dropTableIfExists('user_dietary_restrictions');
   });
 };

@@ -19,10 +19,28 @@
   position: relative;
 }
 
+.header-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 32px;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+}
+
+/* .header-component-container:before {
+  content: "What CAN I make?";
+  font-size: 32px;
+  text-align: center;
+  justify-self: center;
+  color: rgba(255,255,255,0.9);
+} */
+
 .header-buttons-container{
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: auto;
 }
 
 .header-buttons {
@@ -30,7 +48,8 @@
   width: 90px;
   padding: 10px;
   margin-right: 10px;
-  border: none;
+  margin-left: 10px;
+  border: 1px solid yellowgreen;
   border-radius: 5px;
   background-color: #93c560;
   color: #fff;
@@ -43,26 +62,14 @@
   background-color: #80ab54;
 }
 
-/* .login-form-container,
-.sign-up-form-container {
-  z-index: 1000;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background-color: #eb8921;
-  padding: 10px;
-  border: 2px solid #93c560;
-  border-radius: 5px;
-} */
-
 .login-form-container input,
 .sign-up-form-container input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #80ab54;
 }
 
 .login-form-container button,

@@ -6,7 +6,7 @@ exports.up = function(knex) {
   return knex.schema.createTable('user_selected_ingredients', table => {
     table.increments('id');
     table.integer('user_id').references(`users.id`);
-    table.integer('ingeredient_id').references(`ingredients.id`);
+    table.integer('ingredient_id').references(`ingredients.id`);
   })
 };
 
@@ -20,6 +20,6 @@ exports.down = function(knex) {
     table.dropForeign('ingredient_id')
   })
   .then(function() {
-    return knex.schema.dropTableifExists('user_selected_ingredients');
+    return knex.schema.dropTableIfExists('user_selected_ingredients');
   });
 };

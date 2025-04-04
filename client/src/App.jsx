@@ -1,6 +1,6 @@
 import HeaderBar from './components/HeaderBar';
 import Sidebar from './components/Sidebar';
-// import TopTen from './components/TopTen';
+import TopTen from './components/TopTen';
 // import SelectedRecipes from './components/SelectedRecipes';
 // import ShoppingList from './components/ShoppingList';
 import './App.css';
@@ -19,7 +19,7 @@ function App() {
         <div className="right-container-app" style={{zIndex: -1}}>
           <div className="topten-app">
             Top Ten Recipes
-            {/* <TopTen /> */}
+            <TopTen />
           </div>
           <div className="bottom-container-app">
             <div className="selected-recipes-app">
