@@ -1,12 +1,77 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+} */
+
+.app-main-container-app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* height: 100vh;
+  width: 100vw; */
+}
+
+.header-container-app {
+  position: fixed;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 60px;
 }
 
 .main-container-app {
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
   background-color: #eb8921;
-  border: 1px solid #F2F7EB;
+  border: 2px solid yellowgreen;
   border-radius: 15px;
+}
+
+.sidebar-container-app {
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+}
+
+.right-container-app {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topten-app {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+}
+
+.bottom-container-app {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.selected-recipes-app {
+  padding: 20px;
+  overflow-y: auto;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.shopping-list-app {
+  padding: 20px;
+  overflow-y: auto;
+  margin: 0 0 0 20px;
+  flex-grow: 1;
 }

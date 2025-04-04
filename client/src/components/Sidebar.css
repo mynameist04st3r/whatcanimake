@@ -1,0 +1,36 @@
+.sidebar-component-container {
+  background-color: #eb8921;
+  padding: 20px;
+  border: 2px solid yellowgreen;
+  border-radius: 15px;
+}
+
+.sidebar-component-search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
+  background-color: #80ab54;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.diet-restrictions-button,
+.ingredients-button,
+.add-recipe-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #93c560;
+  color: #fff;
+  cursor: pointer;
+}
+
+.diet-restrictions-button:hover,
+.ingredients-button:hover,
+.add-recipe-button:hover {
+  background-color: #80ab54;
+}

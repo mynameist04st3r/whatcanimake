@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'SauceTomato';
+  src: url('../fonts/SauceTomato.otf');
+}
+
+.header-component-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #eb8921;
+  border: 2px solid yellowgreen;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-family: 'SauceTomato';
+  font-size: 16px;
+  line-height: 1.1;
+  height: 60px;
+  position: relative;
+}
+
+.header-buttons-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-buttons {
+  position: relative;
+  width: 90px;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #93c560;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-buttons:hover {
+  background-color: #80ab54;
+}
+
+/* .login-form-container,
+.sign-up-form-container {
+  z-index: 1000;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #eb8921;
+  padding: 10px;
+  border: 2px solid #93c560;
+  border-radius: 5px;
+} */
+
+.login-form-container input,
+.sign-up-form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.login-form-container button,
+.sign-up-form-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #93c560;
+  color: #fff;
+  cursor: pointer;
+}
